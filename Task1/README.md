@@ -26,3 +26,38 @@
 14. Delete local and remote branch %USERNAME-new_feature.
 15. Add all used command to the git_commands.md file in the dev branch.
 16. Send the link to your Git Repository to your mentor via private Skype message.
+
+### EXTRA (optional)*:
+
+1. Read about GitHub Actions. What environment variables can be created?
+2. Create your workflow, what consists of two jobs and contain requirements according the scheme below:
+
+> Workflow variables should contain two variables: <br>
+>>1.  DEPLOY_VER - should contains SHA; <br>
+>>2.  YEAR - any year as you choose
+
+ 
+> First job should: <br>
+
+> Step should:
+>>1. Print the list of files/directories in your github repository.
+>>2. Print content of your log.txt file.
+>>3. Print: “Hello from “your DEPLOY_VER variable’s content” commit”
+
+>Second job should:
+    >>1. Run  after the First job is finished.
+    >>2. Contain variable MONTH- any month as you choose
+
+>Step should:
+>>1. Contain variable DAY__OF_THE_MONTH - any day number as you choose.
+>>2. Print the system date and time
+>>3. Print your variable’s content:<br>
+        “Day - “DAY__OF_THE_MONTH”;<br> 
+            Month - “ MONTH”;<br>
+  Year - “YEAR”.”
+
+
+>* Imagine that you keep in secret your favorite day of week (FAVORITE_DAY_OF_WEEK) and don’t want to share it with anyone. So where will you define it?
+Print: “My favorite day of week is “content of FAVORITE_DAY_OF_WEEK””
+
+>What result did you get and why?
