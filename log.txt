@@ -1,0 +1,35 @@
+commit 4c4934191d41eb334da5e44334438f4f6ad0958a
+Merge: ad83024 0688df8
+Author: Oybek Amonov <36339440+BeckIUT@users.noreply.github.com>
+Date:   Tue Jun 14 17:13:52 2022 +0500
+
+    Merge pull request #2 from BeckIUT/dev
+    
+    Dev
+
+commit 0688df8b99d375700ac0e6c79ef21e8eb485708f
+Merge: ee29873 b744576
+Author: Oybek Amonov <36339440+BeckIUT@users.noreply.github.com>
+Date:   Tue Jun 14 17:12:07 2022 +0500
+
+    Merge pull request #1 from BeckIUT/BeckIUT-new_feature
+    
+    gitignore, readme file changed
+
+commit b7445767b0e8c859aed34e9c702693ecb05e2c65
+Author: BeckIUT <oybek_iut@mail.ru>
+Date:   Tue Jun 14 17:03:08 2022 +0500
+
+    gitignore, readme file changed
+
+commit ee29873e4b17f2515f5af83077320246e95a76bc
+Author: BeckIUT <oybek_iut@mail.ru>
+Date:   Tue Jun 14 16:12:09 2022 +0500
+
+    test file added
+
+commit ad830248a16e06156d776663cfaafa5c85f02761
+Author: BeckIUT <oybek_iut@mail.ru>
+Date:   Tue Jun 14 16:00:21 2022 +0500
+
+    first commit master
