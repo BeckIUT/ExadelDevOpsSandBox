@@ -1,5 +1,5 @@
 ## ALl commands used
-
+```shell
 git clone https://github.com/BeckIUT/ExadelDevOpsSandBox.git
 cd ExadelDevOpsSandBox/
 mkdir Task1
@@ -72,3 +72,4 @@ git commit -m "gitignore added"
 git push origin main
 git checkout dev 
 git status
+```
