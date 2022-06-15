@@ -23,7 +23,6 @@ jobs:
         with:
           path: ../../Task1
         run: ls -lR
-    steps:
       - name: "Read Log File"
         id: log
         uses: juliangruber/read-file-action@v1
@@ -31,7 +30,6 @@ jobs:
           path: ../../Task1/log.txt
       - name: "Output file content"
         run: echo "${{ steps.log.outputs.content }}"
-    steps:
       - name: "Output environment variable"
         run: echo "Hello from $DEPLOY_VER commit"
   second_job:
