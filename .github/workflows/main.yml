@@ -20,9 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "File Directory List"
-        with:
-          path: ../../Task1
-        run: ls -lR
+        run: ls -lR ../../
       - name: "Read Log File"
         id: log
         uses: juliangruber/read-file-action@v1
