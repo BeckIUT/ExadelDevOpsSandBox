@@ -5,8 +5,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,13 +17,15 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
       - name: "File Directory List"
-        run: ls -lR ${GITHUB_WORKSPACE}
+        run: ls -lR
       - name: "Read Log File"
         id: log
         uses: juliangruber/read-file-action@v1
         with:
-          path: ${GITHUB_WORKSPACE}/Task1/log.txt
+          path: Task1/log.txt
       - name: "Output file content"
         run: echo "${{ steps.log.outputs.content }}"
       - name: "Output environment variable"
