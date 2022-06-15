@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  DEPLOY_VER: ${{ secrets.GITHUB_SHA }}
+  DEPLOY_VER: ${GITHUB_SHA::8}
   YEAR: 2022
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       MONTH: June
     steps:
       - name: "Printing some variables"
-        run: date "+%H:%M:%S   %d/%m/%y" && echo "Day-\"$DAY_OF_THE_MONTH\"\n Month-\"$MONTH\"\nYear-\"$YEAR\"" && echo "My favorite day of the week ${{ secrets.FAVORITE_DAY_OF_THE_WEEK }}"
+        run: date "+%H:%M:%S   %d/%m/%y" && echo "Day-\"$DAY_OF_THE_MONTH\"" && echo "Month-\"$MONTH\"" && echo "Year-\"$YEAR\"" && echo "My favorite day of the week ${{ secrets.FAVORITE_DAY_OF_THE_WEEK }}"
         env:
           DAY_OF_THE_MONTH: 15
       
