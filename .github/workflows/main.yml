@@ -20,12 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "File Directory List"
-        run: ls -lR ../../
+        run: ls -lR ../
       - name: "Read Log File"
         id: log
         uses: juliangruber/read-file-action@v1
         with:
-          path: ../../Task1/log.txt
+          path: ../Task1/log.txt
       - name: "Output file content"
         run: echo "${{ steps.log.outputs.content }}"
       - name: "Output environment variable"
