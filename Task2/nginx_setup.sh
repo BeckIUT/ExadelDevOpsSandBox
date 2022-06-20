@@ -13,7 +13,7 @@ apt install python3-venv
 python3 -m venv venv
 source venv/bin/activate
 
-pip install -r requirements.txt
+pip install -r req.txt
 pip install wheel uwsgi
 
 deactivate
@@ -21,6 +21,6 @@ deactivate
 cp app.service /etc/systemd/system/
 
 cp hello-page.nginx.conf /etc/nginx/sites-available/app
-ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/app /etc/nginx/sites-enabled/
 
 systemctl start app.service
